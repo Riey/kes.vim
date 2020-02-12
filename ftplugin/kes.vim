@@ -7,9 +7,9 @@ endif
 
 let b:did_ftplugin = 1
 
-setl comments=:;
+setl comments=:;;,:;
 setl commentstring=;%s
-setl formatoptions-=t formatoptions+=croqnl
+setl formatoptions+=croqnl
 setl smartindent cindent tabstop=8 shiftwidth=4 softtabstop=4 expandtab
 
 if exists("g:AutoPairsLoaded")
@@ -17,7 +17,6 @@ if exists("g:AutoPairsLoaded")
 endif
 
 setl foldmethod=syntax
-setl conceallevel=2
 
 let b:undo_ftplugin = 'setl comments< commentstring< formatoptions< foldmethod< conceallevel<'
 
