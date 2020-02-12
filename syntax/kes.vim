@@ -6,8 +6,8 @@ syn region  kesVariableAssign   start="\["  end="\]"    contains=kesVariable
 syn match   kesNumber           "\<[0-9]\+\>"
 syn region  kesString           start="'"   end="'"
 
-syn match   kesBuiltin          "\<[ㄱ-ㅎㅏ-ㅣ가-힣_][0-9ㄱ-ㅎㅏ-ㅣ가-힣_]*\>"
-syn match   kesVariable         "$\<[0-9ㄱ-ㅎㅏ-ㅣ가-힣_]\+\>"
+syn match   kesBuiltin          "\<[a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_][0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_]*\>"
+syn match   kesVariable         "$\<[0-9a-zA-Zㄱ-ㅎㅏ-ㅣ가-힣_]\+\>"
 
 syn region  kesComment          start=";"   end="$"
 
