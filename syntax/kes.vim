@@ -1,7 +1,7 @@
 syn keyword kesElse             그외
 syn keyword kesSelect           선택
 
-syn region  kesVariableAssign   start="["  end="]"    contains=kesVariable
+syn region  kesVariableAssign   start="\["  end="\]"    contains=kesVariable
 syn keyword kesPop              [-]
 syn keyword kesDup              [+]
 syn keyword kesCond             [?]
