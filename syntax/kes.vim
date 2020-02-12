@@ -1,9 +1,9 @@
 syn keyword kesElse             그외
 syn keyword kesSelect           선택
 
-syn keyword kesPop              [-]
-syn keyword kesDup              [+]
-syn keyword kesCond             [?]
+syn keyword kesPop              \[-\]
+syn keyword kesDup              \[+\]
+syn keyword kesCond             \[?\]
 syn region  kesVariableAssign   start="\["  end="\]"    contains=kesVariable
 syn match   kesOperator         display "\%(+\|-\|/\|*\|=\|\^\|&\||\|~\|>\|<\|<>\|%\|@\|#\)=\?"
 syn match   kesNumber           "\<[0-9]\+\>"

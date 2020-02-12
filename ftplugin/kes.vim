@@ -10,7 +10,7 @@ let b:did_ftplugin = 1
 setl comments=:;;,:;
 setl commentstring=;%s
 setl formatoptions+=croqnl
-setl smartindent cindent tabstop=8 shiftwidth=4 softtabstop=4 expandtab
+setl smartindent cindent tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 if exists("g:AutoPairsLoaded")
     let b:AutoPairs = {'{':'}', "'":"'"}
