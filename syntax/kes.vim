@@ -1,8 +1,6 @@
 syn keyword kesElse             그외
 syn keyword kesSelect           선택
 
-syn match   kesDelim            \[{}\]
-
 syn match   kesOperator         display "\%(+\|-\|/\|*\|=\|\^\|&\||\|~\|>\|<\|<>\|%\|@\|#\|\[?]\|\[-]\|\[+]\)=\?"
 syn region  kesVariableAssign   start="\["  end="\]"    contains=kesVariable
 syn match   kesNumber           display "[0-9]+"
@@ -15,8 +13,6 @@ syn region  kesComment          start=";"   end="$"
 
 hi def link kesElse             Keyword
 hi def link kesSelect           Keyword
-
-hi def link kesDelim            Delimiter
 
 hi def link kesOperator         Operator
 hi def link kesVariableAssign   Operator
