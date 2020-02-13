@@ -16,7 +16,5 @@ if exists("g:AutoPairsLoaded")
     let b:AutoPairs = {'{':'}', "'":"'"}
 endif
 
-setl foldmethod=syntax
-
-let b:undo_ftplugin = 'setl comments< commentstring< formatoptions< foldmethod< conceallevel<'
+let b:undo_ftplugin = 'setl comments< commentstring< formatoptions< conceallevel<'
 
