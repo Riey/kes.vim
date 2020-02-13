@@ -1,5 +1,7 @@
 syn keyword kesElse             그외
 syn keyword kesSelect           선택
+syn keyword kesLoop             반복
+syn keyword kesQuit             종료
 
 syn match   kesOperator         display "\%(+\|-\|?\|/\|*\|=\|\^\|&\||\|\~\|>\|<\|%\|@\|#\)=\?"
 syn match   kesNumber           "\<[0-9]\+\>"
@@ -12,23 +14,25 @@ syn region  kesStackOperator    start="\["  end="\]"    contains=kesVariable,kes
 
 syn region  kesComment          start=";"   end="$"
 
-hi! def link kesElse             Keyword
-hi! def link kesSelect           Keyword
+hi! def link kesElse            Keyword
+hi! def link kesSelect          Keyword
+hi! def link kesLoop            Keyword
+hi! def link kesQuit            Keyword
 
 
-hi! def link kesPop              Operator
-hi! def link kesDup              Operator
-hi! def link kesCond             Operator
-hi! def link kesVariableAssign   Operator
-hi! def link kesOperator         Operator
-hi! def link kesStackOperator    Operator
+hi! def link kesPop             Operator
+hi! def link kesDup             Operator
+hi! def link kesCond            Operator
+hi! def link kesVariableAssign  Operator
+hi! def link kesOperator        Operator
+hi! def link kesStackOperator   Operator
 
-hi! def link kesNumber           Number
-hi! def link kesString           String
+hi! def link kesNumber          Number
+hi! def link kesString          String
 
-hi! def link kesBuiltin          Function
-hi! def link kesVariable         Special
+hi! def link kesBuiltin         Function
+hi! def link kesVariable        Special
 
-hi! def link kesComment          Comment
+hi! def link kesComment         Comment
 
 let b:current_syntax = "kes"
